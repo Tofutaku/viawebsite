@@ -4,54 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Impressum - Vivid Arise eSports e.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <style>
         @import url('https://fonts.cdnfonts.com/css/osaka-sans-serif');
-.text{ 
-   position: absolute;
-    top:40%;
-    left:100px;
-    width:300px;
-    text-align: left;
-    padding:0;
-    color:#eee;
-    transform: translate(0,-50%);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
-    font-size: 40px;
-    font-weight: bold;
-    opacity: 0;
-    animation:showcontent 1s ease-in-out 1 forwards;
 
-    
-    font-family: 'Osaka-Sans Serif', sans-serif;
-}
-.beschreibung{
-    position: absolute;
-    font-size: 10px;
-    top:50%;
-    left:100px;
-    width:600px;
-    text-align: left;
-    padding:0;
-    color:#eee;
-    transform: translate(0,-50%);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
-    opacity: 0;
-    animation:showcontent 1s ease-in-out 1 forwards;
-    background-color: #e2070793;
-    padding: 5px;
-        border-radius: 5px;
-        box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.5);
-    
+        body {
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 0;
+            font-family: 'Osaka-Sans Serif', sans-serif;
+        }
 
-    
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+        .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #f5f5f5;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
 
-</style>
+        .item {
+            position: relative;
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
+        .item .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .item:hover .content {
+            opacity: 1;
+        }
+
+        .text {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+            margin-bottom: 10px;
+        }
+
+        .beschreibung {
+            font-size: 16px;
+            color: #eee;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+            background-color: #e2070793;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -59,39 +78,34 @@
             <div class="content">
                 <div class="text">ABOUT US</div>
                 <div class="des">Lern uns kennen!</div>
-                <button class="underline"> <a href="about_us.html">See more</a></button>
+                <button class="underline"><a href="about_us.html">See more</a></button>
             </div>
-            <div class="text">Impressum</div>
-            <div class="beschreibung"> 
-                Webiste
-                Dieses Impressum gilt für alle Angebote unter der Domain https://www.vividarise.de inklusive aller Subdomains (Unterseiten)
-                Soziale Medien
-                Dieses Impressum gilt auf für unsere Auftritte in den folgenden sozialen Medien:
-                <br>Instagram: https://www.instagram.com/vivid_arise_esports/
-                <br>TikTok: https://www.tiktok.com/@vividarise_esports 
-                <br>Twitter: https://twitter.com/vivid_arise 
-                <br>YouTube: https://www.youtube.com/channel/UCemYVSEOcEJmRBsf1h_9rrw 
-                <br>Twitch: https://www.twitch.tv/via_esports
-                Angaben gemäß  § 5 TMG Vivid Arise eSports e.V.(ehemals Indefinable Bound eSports e.V.)
+        </div>
+        <div class="text">Impressum</div>
+        <div class="beschreibung">
+            <p>
+                Website: Dieses Impressum gilt für alle Angebote unter der Domain <a href="https://www.vividarise.de">https://www.vividarise.de</a> inklusive aller Subdomains (Unterseiten).
+            </p>
+            <p>
+                Soziale Medien: Dieses Impressum gilt auf für unsere Auftritte in den folgenden sozialen Medien:
+                <br>Instagram: <a href="https://www.instagram.com/vivid_arise_esports/">https://www.instagram.com/vivid_arise_esports/</a>
+                <br>TikTok: <a href="https://www.tiktok.com/@vividarise_esports">https://www.tiktok.com/@vividarise_esports</a>
+                <br>Twitter: <a href="https://twitter.com/vivid_arise">https://twitter.com/vivid_arise</a>
+                <br>YouTube: <a href="https://www.youtube.com/channel/UCemYVSEOcEJmRBsf1h_9rrw">https://www.youtube.com/channel/UCemYVSEOcEJmRBsf1h_9rrw</a>
+                <br>Twitch: <a href="https://www.twitch.tv/via_esports">https://www.twitch.tv/via_esports</a>
+            </p>
+            <p>
+                Angaben gemäß § 5 TMG Vivid Arise eSports e.V. (ehemals Indefinable Bound eSports e.V.)
                 <br>Hooverstr. 13i
                 <br>86156 Augsburg
                 <br>Telefon: 01520 6570454
                 <br>E-Mail: via.vividarise@gmail.com
-                 
-                <br>Eintragung
+                <br>Eintragung:
                 <br>Register: Amtsgericht Augsburg
                 <br>Registernummer: VR 202738
-               <br><br><button class="underline"> <a href="index_main.html">Back</a></button>
-                 </div>
-
-                </div>
-               
-            </div>
-
-       
-    
-
-    
+            </p>
+            <button class="underline"><a href="index_main.html">Back</a></button>
+        </div>
+    </div>
 </body>
 </html>
-  
